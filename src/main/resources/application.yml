@@ -1,0 +1,23 @@
+server:
+    port: 9090
+---
+spring:
+    view:
+        prefix: /views/
+        suffix: .jsp
+---
+debug: true
+---
+logging:
+    level:
+        org:
+            springframework:
+                web: DEBUG
+            cdac:
+                gist: DEBUG
+---
+              # MONGODB (MongoProperties)
+spring
+    data
+        mongodb
+            uri: mongodb://10.48.65.17/ecidata # connection URL
